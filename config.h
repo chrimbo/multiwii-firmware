@@ -480,14 +480,14 @@ At this moment you can use this function only with WinGUI 2.3 release. MultiWiiC
 
   //#define OVERRIDE_PSENSORPIN                 A1 // instead of A2    // Analog PIN 2
 
-  //#define OVERRIDE_LEDPIN_PINMODE             pinMode (A1, OUTPUT); // use A1 instead of d13
-  //#define OVERRIDE_LEDPIN_TOGGLE              PINC |= 1<<1; // PINB |= 1<<5;     //switch LEDPIN state (digital PIN 13)
-  //#define OVERRIDE_LEDPIN_OFF                 PORTC &= ~(1<<1); // PORTB &= ~(1<<5);
-  //#define OVERRIDE_LEDPIN_ON                  PORTC |= 1<<1;    // was PORTB |= (1<<5);
+  #define OVERRIDE_LEDPIN_PINMODE             pinMode (A2, OUTPUT); // use A2 instead of d13
+  #define OVERRIDE_LEDPIN_TOGGLE              PINC |= 1<<2; // PINB |= 1<<5;     //switch LEDPIN state (digital PIN 13)
+  #define OVERRIDE_LEDPIN_OFF                 PORTC &= ~(1<<2); // PORTB &= ~(1<<5);
+  #define OVERRIDE_LEDPIN_ON                  PORTC |= 1<<2;    // was PORTB |= (1<<5);
 
-  //#define OVERRIDE_BUZZERPIN_PINMODE          pinMode (A2, OUTPUT); // use A2 instead of d8
-  //#define OVERRIDE_BUZZERPIN_ON               PORTC |= 1<<2 //PORTB |= 1;
-  //#define OVERRIDE_BUZZERPIN_OFF              PORTC &= ~(1<<2); //PORTB &= ~1;
+  #define OVERRIDE_BUZZERPIN_PINMODE          pinMode (A1, OUTPUT); // use A1 instead of d8
+  #define OVERRIDE_BUZZERPIN_ON               PORTC |= 1<<1 //PORTB |= 1;
+  #define OVERRIDE_BUZZERPIN_OFF              PORTC &= ~(1<<1); //PORTB &= ~1;
 
 /*************************************************************************************************/
 /*****************                                                                 ***************/
@@ -575,7 +575,7 @@ At this moment you can use this function only with WinGUI 2.3 release. MultiWiiC
 
   /************************        continuous gyro calibration        ********************/
   /* Gyrocalibration will be repeated if copter is moving during calibration. */
-    //#define GYROCALIBRATIONFAILSAFE
+    #define GYROCALIBRATIONFAILSAFE
 
   /************************        AP FlightMode        **********************************/
   /*** FUNCTIONALITY TEMPORARY REMOVED ***/
@@ -878,7 +878,7 @@ Also note, that maqgnetic declination changes with time, so recheck your value e
   /********************************************************************/
   /****                             Buzzer                         ****/
   /********************************************************************/
-    //#define BUZZER
+    #define BUZZER
     //#define RCOPTIONSBEEP         // uncomment this if you want the buzzer to beep at any rcOptions change on channel Aux1 to Aux4
     //#define ARMEDTIMEWARNING 330  // (*) Trigger an alarm after a certain time of being armed [s] to save you lipo (if your TX does not have a countdown)
     //#define PILOTLAMP             //Uncomment if you are using a X-Arcraft Pilot Lamp
