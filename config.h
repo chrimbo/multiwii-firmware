@@ -559,7 +559,7 @@ At this moment you can use this function only with WinGUI 2.3 release. MultiWiiC
   //#define THROTTLE_ANGLE_CORRECTION 40
   
   /*** HEADFREE : the copter can be controled by an absolute stick orientation, whatever the yaw orientation ***/
-  //#define HEADFREE
+  #define HEADFREE
   
  /*************************        Advanced Headfree Mode             ********************/
  /* In Advanced Headfree mode when the copter is farther than ADV_HEADFREE_RANGE meters then 
