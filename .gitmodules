@@ -1,3 +1,6 @@
 [submodule "src"]
 	path = src
 	url = ./src
+[submodule "arduinolib"]
+	path = arduinolib
+	url = ./arduinolib
