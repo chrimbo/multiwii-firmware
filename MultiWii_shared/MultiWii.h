@@ -1,12 +1,12 @@
 #ifndef MULTIWII_H_
 #define MULTIWII_H_
 
-#define  VERSION        241
+#define  VERSION        240
 #define  NAVI_VERSION   7     //This allow sync with GUI
 #include "types.h"
 #include "Alarms.h"
 
-#define MINCHECK 1150
+#define MINCHECK 1100
 #define MAXCHECK 1900
 
 extern volatile unsigned long timer0_overflow_count;
